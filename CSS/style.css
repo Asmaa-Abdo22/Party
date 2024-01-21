@@ -1,0 +1,206 @@
+/* &------------GLOBAL --------------- */
+ul {
+  list-style-type: none;
+}
+a,
+span {
+  display: inline-block;
+}
+.lightBlack {
+  background-color: #111111;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.w-15 {
+  width: 15%;
+}
+.h-100 {
+  height: 100%;
+}
+.w-35 {
+  width: 35%;
+}
+.bg-pink {
+  background-color: #e68285;
+}
+.bg-grey {
+  background-color: #cccccc;
+}
+.iconGrey {
+  color: #777777;
+}
+textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 150px;
+  max-height: 150px;
+  padding: 10px;
+  transition: 0.3s all;
+  border: 2px solid #e8e3e3;
+}
+#contact textarea:focus {
+  border: 1px solid;
+  outline: none;
+}
+input:focus {
+  box-shadow: none !important;
+}
+#contact :is(input, textarea):focus {
+  border-color: #ce1212;
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: auto;
+  }
+}
+/* &--------------HOME SECTION ------------- */
+#home {
+  background-image: url(/Imgs/events-heavenly-header.jpg);
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#home .layer {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(214, 46, 51, 0.6);
+  z-index: 1;
+}
+#open {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  z-index: 5;
+  font-size: 25px;
+  cursor: pointer;
+}
+#home .sideNav #closeIcon {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+#home .sideNav #closeIcon:hover {
+  color: rgba(214, 46, 51, 0.4);
+}
+.sideNav #linkBox {
+  position: relative;
+  top: 50px;
+}
+#home .sideNav #linkBox li {
+  margin-block: 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+#home .sideNav #linkBox li a {
+  transition: color 0.3s;
+}
+#home .sideNav #linkBox li a:hover {
+  color: rgba(214, 46, 51, 0.4);
+}
+/* &--------------DURATION SECTION ------------- */
+#duration .toggle {
+  cursor: pointer;
+}
+#duration .inner {
+  display: none;
+}
+/* &--------------COUNT SECTION ------------- */
+#count {
+  height: 350px;
+  background-image: url(/Imgs/invitation-2508607__340.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+}
+#count .countLayer {
+  position: absolute;
+  background-color: rgba(214, 46, 51, 0.6);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#count #item {
+  font-weight: bold;
+  border: 1px solid white;
+  padding: 40px;
+  text-align: center;
+  font-size: 30px;
+  height: 150px;
+  color: white;
+}
+/* &--------------CONTACT SECTION ------------- */
+#contact .iconss {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #6c757d;
+  border-radius: 50%;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: 0.3s all;
+}
+#contact .iconss:hover {
+  background-color: #d62e33;
+  color: white !important;
+}
+#contact .iconss i {
+  font-size: 20px;
+}
+#contact .iconss a {
+  transition: 0.3s color;
+}
+#contact .iconss:hover a {
+  color: white !important;
+}
+#contact .aBtn {
+  background-color: hsl(0, 84%, 44%);
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s background-color;
+}
+#contact .aBtn:hover {
+  background-color: #e61414;
+}
+/* &--------------MEDIA QUERY ------------- */
+@media (max-width: 575.98px) { 
+  h1{
+    font-size: calc(1rem + 3.3vw) !important;
+    margin-left: 30px;
+    margin-bottom: 40px;
+  }
+  #open{
+    font-size: 16px;
+  }
+  .sideNav{
+    width: 150px;
+  }
+  
+ }
+ @media (max-width: 767.98px) { 
+  #count {
+    height: 713px;
+   
+  }
+  .main{
+    width: 75% !important;
+  }
+  #inputName{
+    margin-top: 30px;
+  }
+  .description{
+    font-size: 20px ;
+  }
+  }
