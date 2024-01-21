@@ -57,7 +57,7 @@ input:focus {
 }
 /* &--------------HOME SECTION ------------- */
 #home {
-  background-image: url(/Imgs/events-heavenly-header.jpg);
+  background-image: url(../Imgs/events-heavenly-header.jpg);
   min-height: 90vh;
   background-size: cover;
   background-position: center;
@@ -119,7 +119,7 @@ input:focus {
 /* &--------------COUNT SECTION ------------- */
 #count {
   height: 350px;
-  background-image: url(/Imgs/invitation-2508607__340.jpg);
+  background-image: url(../Imgs/invitation-2508607__340.jpg);
   background-position: center;
   background-size: 100% 100%;
   position: relative;
@@ -175,32 +175,30 @@ input:focus {
   background-color: #e61414;
 }
 /* &--------------MEDIA QUERY ------------- */
-@media (max-width: 575.98px) { 
-  h1{
+@media (max-width: 575.98px) {
+  h1 {
     font-size: calc(1rem + 3.3vw) !important;
     margin-left: 30px;
     margin-bottom: 40px;
   }
-  #open{
+  #open {
     font-size: 16px;
   }
-  .sideNav{
+  .sideNav {
     width: 150px;
   }
-  
- }
- @media (max-width: 767.98px) { 
+}
+@media (max-width: 767.98px) {
   #count {
     height: 713px;
-   
   }
-  .main{
+  .main {
     width: 75% !important;
   }
-  #inputName{
+  #inputName {
     margin-top: 30px;
   }
-  .description{
-    font-size: 20px ;
+  .description {
+    font-size: 20px;
   }
-  }
+}
